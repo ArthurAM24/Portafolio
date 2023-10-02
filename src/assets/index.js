@@ -25,10 +25,10 @@ import essalud from "./company/essalud.png";
 import company from "./company/company.png";
 import domi from "./company/domi.png";
 
-import animemedia from "./proyects/Animemedia.jpg";
-import grifosdomi from "./proyects/GrifosDomi.jpg";
-import puntosabroso from "./proyects/PuntoSabroso.jpg";
-import pidealtoq from "./proyects/Pidealtoque.jpg";
+import animemedia from "./proyects/animemedia.jpg";
+import grifosdomi from "./proyects/grifosdomi.jpg";
+import puntosabroso from "./proyects/puntosabroso.jpg";
+import pidealtoq from "./proyects/pidealtoque.jpg";
 import ugelpurus from "./proyects/ugelpurus.jpg";
 
 export {
