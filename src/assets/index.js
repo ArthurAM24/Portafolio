@@ -25,12 +25,6 @@ import essalud from "./company/essalud.png";
 import company from "./company/company.png";
 import domi from "./company/domi.png";
 
-import proyect1 from "./proyects/Animemedia.jpg";
-import proyect2 from "./proyects/Grifosdomi.jpg";
-import proyect3 from "./proyects/Puntosabroso.jpg";
-import proyect4 from "./proyects/Pidealtoque.jpg";
-import proyect5 from "./proyects/Ugelpurus.jpg";
-
 export {
   logo,
   backend,
@@ -58,11 +52,5 @@ export {
   essalud,
   company,
   domi,
-
-  proyect1,
-  proyect2,
-  proyect3,
-  proyect4,
-  proyect5,
 
 };

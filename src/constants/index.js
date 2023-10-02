@@ -21,13 +21,6 @@ import {
   essalud,
   company,
   domi,
- 
-
-  proyect1,
-  proyect2,
-  proyect3,
-  proyect4,
-  proyect5,
 
 } from "../assets";
 
@@ -191,7 +184,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: proyect1,
+    image: "https://i.postimg.cc/k4LWRK4D/Animemedia.jpg",
     source_code_link: "https://www.facebook.com/gaming/AnimemediaxD",
   },
   {
@@ -208,7 +201,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: proyect2,
+    image: "https://i.postimg.cc/65rCT7N5/Grifosdomi.jpg",
     source_code_link: "https://www.facebook.com/grifosdomi",
   },{
     name: "Punto Sabroso",
@@ -228,7 +221,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: proyect3,
+    image: "https://i.postimg.cc/7Y8gx3dW/Puntosabroso.jpg",
     source_code_link: "https://arthuram24.github.io/foodweb/",
   },
   {
@@ -245,7 +238,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: proyect4,
+    image: "https://i.postimg.cc/vT9frTgh/Pidealtoque.jpg",
     source_code_link: "https://github.com/ArthurAM24/ProyectoFinal",
   },
   {
@@ -266,7 +259,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: proyect5,
+    image: "https://i.postimg.cc/bwqknzz0/Ugelpurus.jpg",
     source_code_link: "https://ugelpurus.net",
   },
   
