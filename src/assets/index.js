@@ -25,11 +25,11 @@ import essalud from "./company/essalud.png";
 import company from "./company/company.png";
 import domi from "./company/domi.png";
 
-import animemedia from "./proyects/Animemedia.jpg";
-import grifosdomi from "./proyects/Grifosdomi.jpg";
-import puntosabroso from "./proyects/Puntosabroso.jpg";
-import pidealtoq from "./proyects/Pidealtoque.jpg";
-import ugelpurus from "./proyects/Ugelpurus.jpg";
+import proyect1 from "./proyects/Animemedia.jpg";
+import proyect2 from "./proyects/Grifosdomi.jpg";
+import proyect3 from "./proyects/Puntosabroso.jpg";
+import proyect4 from "./proyects/Pidealtoque.jpg";
+import proyect5 from "./proyects/Ugelpurus.jpg";
 
 export {
   logo,
@@ -59,9 +59,10 @@ export {
   company,
   domi,
 
-  animemedia,
-  grifosdomi,
-  puntosabroso,
-  pidealtoq,
-  ugelpurus,
+  proyect1,
+  proyect2,
+  proyect3,
+  proyect4,
+  proyect5,
+
 };

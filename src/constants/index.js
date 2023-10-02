@@ -23,11 +23,11 @@ import {
   domi,
  
 
-  animemedia,
-  grifosdomi,
-  puntosabroso,
-  pidealtoq,
-  ugelpurus,
+  proyect1,
+  proyect2,
+  proyect3,
+  proyect4,
+  proyect5,
 
 } from "../assets";
 
@@ -191,7 +191,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: animemedia,
+    image: proyect1,
     source_code_link: "https://www.facebook.com/gaming/AnimemediaxD",
   },
   {
@@ -208,7 +208,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: grifosdomi,
+    image: proyect2,
     source_code_link: "https://www.facebook.com/grifosdomi",
   },{
     name: "Punto Sabroso",
@@ -228,7 +228,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: puntosabroso,
+    image: proyect3,
     source_code_link: "https://arthuram24.github.io/foodweb/",
   },
   {
@@ -245,7 +245,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: pidealtoq,
+    image: proyect4,
     source_code_link: "https://github.com/ArthurAM24/ProyectoFinal",
   },
   {
@@ -266,7 +266,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: ugelpurus,
+    image: proyect5,
     source_code_link: "https://ugelpurus.net",
   },
   
