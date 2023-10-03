@@ -1,15 +1,15 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy static content to GitHub Pages and Production
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['main']
+    branches:
+      - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+# Set permissions for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
@@ -21,11 +21,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # Deploy to GitHub Pages
+  github-pages-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -44,8 +41,39 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload dist repository
           path: './dist'
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: github-pages-deployment
         uses: actions/deploy-pages@v1
+    environment:
+      name: github-pages
+      url: ${{ steps.github-pages-deployment.outputs.page_url }}
+
+  # Deploy to Production
+  production-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './dist'
+      - name: Deploy to Production
+        id: production-deployment
+        uses: actions/deploy-pages@v1
+    environment:
+      name: Production
+      # Add the URL for your Production environment here
+
