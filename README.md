@@ -15,7 +15,6 @@ Este es mi portafolio personal desarrollado con React.js y otras tecnologías we
 - Vite (como herramienta de desarrollo y construcción)
 - ESLint (para el linting del código)
 - Tailwind CSS (para estilos)
-- Maath (¿Qué función cumple esta dependencia?)
 - Otras dependencias (ver package.json para más detalles)
 
 ## Scripts Disponibles
