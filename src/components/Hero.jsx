@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas />
-      <ScrollTo href='#about' />
+      <ScrollTo href='#about'/>
     </section>
   );
 };

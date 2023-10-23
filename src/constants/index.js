@@ -184,7 +184,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: "https://i.postimg.cc/k4LWRK4D/Animemedia.jpg",
+    image: "https://i.postimg.cc/mrH01p7q/Animemedia.jpg",
     source_code_link: "https://www.facebook.com/gaming/AnimemediaxD",
   },
   {
@@ -201,7 +201,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: "https://i.postimg.cc/65rCT7N5/Grifosdomi.jpg",
+    image: "https://i.postimg.cc/tJ2fGKH1/Grifosdomi.jpg",
     source_code_link: "https://www.facebook.com/grifosdomi",
   },{
     name: "Punto Sabroso",
@@ -221,7 +221,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "https://i.postimg.cc/7Y8gx3dW/Puntosabroso.jpg",
+    image: "https://i.postimg.cc/d1cg2RB0/Puntosabroso.jpg",
     source_code_link: "https://arthuram24.github.io/foodweb/",
   },
   {
@@ -238,7 +238,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: "https://i.postimg.cc/vT9frTgh/Pidealtoque.jpg",
+    image: "https://i.postimg.cc/Fz9qq9w5/Pidealtoque.jpg",
     source_code_link: "https://github.com/ArthurAM24/ProyectoFinal",
   },
   {
