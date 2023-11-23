@@ -147,7 +147,8 @@ const Contact = () => {
               ${formErrors.name ?
                   "border-red-500" :
                   "border-none"
-                } font-medium`}
+                } font-medium`}  
+                autoComplete="name" // Agregado el atributo autocomplete
             />
           </label>
           <label className='flex flex-col'>
@@ -166,6 +167,7 @@ const Contact = () => {
                   "border-red-500" :
                   "border-none"
                 } font-medium`}
+                autoComplete="email" // Agregado el atributo autocomplete
             />
           </label>
           <label className='flex flex-col'>
@@ -184,6 +186,7 @@ const Contact = () => {
                   "border-red-500" :
                   "border-none"
                 } font-medium`}
+                autoComplete="off" // Agregado el atributo autocomplete
             />
           </label>
 
