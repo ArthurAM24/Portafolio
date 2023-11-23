@@ -16,7 +16,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import nodejs from "./tech/nodejs.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 import git from "./tech/git.png";
 import figma from "./tech/figma.png";
 import docker from "./tech/docker.png";
@@ -38,16 +38,16 @@ export {
   java,
   html,
   css,
-  docker,
-  figma,
-  git,
   javascript,
-  nodejs,
+  typescript,
   reactjs,
   redux,
   tailwind,
-  typescript,
+  nodejs,
   threejs,
+  git,
+  figma,
+  docker,
 
   essalud,
   company,

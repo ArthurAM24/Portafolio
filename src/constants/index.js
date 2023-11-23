@@ -6,17 +6,17 @@ import {
   
   java,
   html,
+  css,
   javascript,
   typescript,
-  css,
   reactjs,
   redux,
   tailwind,
   nodejs,
+  threejs,
   git,
   figma,
   docker,
-  threejs,
   
   essalud,
   company,
@@ -108,9 +108,10 @@ const technologies = [
   },
 
   {
-    name: "Three JS",
+    name: "ThreeJs",
     icon: threejs,
   },
+
   {
     name: "git",
     icon: git,
