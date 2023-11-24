@@ -5,7 +5,17 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const { scene } = useGLTF("./desktop_pc/scene.gltf"); // Destructure the returned object to get the 'scene'
+  const { scene } = useGLTF("./desktop_pc/scene.gltf");
+
+  useEffect(() => {
+    // Libera recursos al desmontar el componente
+    return () => {
+       scene.traverse((object) => {
+       if (object.material) object.material.dispose();
+        if (object.geometry) object.geometry.dispose();
+      });
+    };
+  }, []);
 
   return (
     <mesh>
@@ -20,9 +30,9 @@ const Computers = ({ isMobile }) => {
       />
       <pointLight intensity={1} />
       <primitive
-        object={scene} // Use the 'scene' property from the destructured object
-        scale={isMobile ? 0.6 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        object={scene}
+        scale={isMobile ? 0.4 : 0.75}
+        position={isMobile ? [0,-3, -1] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -35,29 +45,28 @@ const ComputersCanvas = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
-    // Initial check for mobile view
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
 
-    // Use 'addListener' instead of 'addEventListener'
     mediaQuery.addListener(handleMediaQueryChange);
 
     return () => {
-      // Use 'removeListener' instead of 'removeEventListener'
       mediaQuery.removeListener(handleMediaQueryChange);
     };
   }, []);
 
+  const canvasProps = {
+    shadows: true,
+    dpr: [1, 2],
+    camera: { position: [20, 3, 5], fov: 25 },
+    gl: { preserveDrawingBuffer: true },
+  };
+
   return (
-    <Canvas
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
+    <Canvas {...canvasProps}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}

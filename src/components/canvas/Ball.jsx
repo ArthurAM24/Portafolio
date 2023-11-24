@@ -1,10 +1,18 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+
+  useEffect(() => {
+    // Libera recursos al desmontar el componente, si es necesario
+    return () => {
+      // Puedes agregar código para liberar recursos, si es necesario
+       decal.dispose();
+    };
+  }, []);
 
   return (
     <Float speed={1.75} rotationIntensity={0.5} floatIntensity={1}>
