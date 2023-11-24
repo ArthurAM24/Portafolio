@@ -71,58 +71,58 @@ const services = [
 const technologies = [
   {
     name: "Java",
-    icon: java,
+    icon: "https://i.postimg.cc/9MtypbLx/java.png",
   },
   {
     name: "HTML 5",
-    icon: html,
+    icon: "https://i.postimg.cc/bYgQS6Dr/html.png",
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: "https://i.postimg.cc/W1CmbhD7/css.png",
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: "https://i.postimg.cc/RV0w7cKR/javascript.png",
   },
   {
     name: "TypeScript",
-    icon: typescript,
+    icon: "https://i.postimg.cc/sD1ZQ3CH/typescript.png",
   },
 
   {
     name: "React JS",
-    icon: reactjs,
+    icon: "https://i.postimg.cc/0QfJmQNF/reactjs.png",
   },
   {
     name: "Redux Toolkit",
-    icon: redux,
+    icon: "https://i.postimg.cc/yx83THgd/redux.png",
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: "https://i.postimg.cc/h42dtf67/tailwind.png",
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: "https://i.postimg.cc/TwGDpmTn/nodejs.png",
   },
 
   {
     name: "ThreeJs",
-    icon: threejs,
+    icon: "https://i.postimg.cc/qqDhb5yG/threejs.png",
   },
 
   {
     name: "git",
-    icon: git,
+    icon: "https://i.postimg.cc/8zJW3Nyf/git.png",
   },
   {
     name: "figma",
-    icon: figma,
+    icon: "https://i.postimg.cc/8cZM85QM/figma.png",
   },
   {
     name: "docker",
-    icon: docker,
+    icon: "https://i.postimg.cc/zB1nK6Fb/docker.png",
   },
 ];
 
