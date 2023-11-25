@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+
+import headerImg from "/header-img.svg";
 
 const Hero = () => {
   return (
@@ -15,18 +16,21 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-           Hola, Soy <span className='text-[#38cef3]'>Arthur</span>
+            Hola, Soy <span className='text-[#38cef3]'>Arthur</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Full Stack Developer<br className='sm:block hidden' />
           </p>
         </div>
-     
       </div>
 
-      <ComputersCanvas />
+      <div className='absolute bottom-12 w-full flex justify-end items-center'>
+        <div className='w-[400px] h-[600px] flex justify-center items-center mx-2 xs: w-[300px] h-[394px]'>
+          <img src={headerImg} alt="Header Img" />
+        </div>
+      </div>
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-10 bottom-12 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
