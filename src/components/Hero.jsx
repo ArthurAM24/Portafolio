@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='absolute bottom-12 w-full flex justify-end items-center'>
+      <div className='absolute inset-0 top-[120px] max-w-7xl mx-auto flex justify-end items-center'>
         <div className='w-[400px] h-[600px] flex justify-center items-center mx-2 xs: w-[300px] h-[394px]'>
           <img src={headerImg} alt="Header Img" />
         </div>
