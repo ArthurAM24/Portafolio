@@ -204,9 +204,6 @@ const Contact = () => {
         className='xl:flex-1 h-[500px] xl:h-auto lg:h-[550px] md:h-[600px] sm:h-[500px] xs:h-[500px] '
       >
         <EarthCanvas />
-        <div className='xl:hidden md:hidden '>
-          <ScrollTo href='#contactform' />
-        </div>
       </motion.div>
     </div>
   );
