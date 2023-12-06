@@ -6,28 +6,38 @@ import headerImg from "/header-img.svg";
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+      <div className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX}
+       flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#38cef3]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hola, Soy <span className='text-[#38cef3]'>Arthur</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Full Stack Developer<br className='sm:block hidden' />
-          </p>
-        </div>
-      </div>
+        <div className='container mx-auto'>
+          <div className='flex flex-wrap justify-between items-center'>
+            <div className='self-start mx-2'>
+              <h1 className={`${styles.heroHeadText} text-white`}>
+                Hola, Soy <span className='text-[#38cef3]'>Arthur</span>
+              </h1>
 
-      <div className='absolute inset-0 top-[120px] max-w-7xl mx-auto flex justify-end items-center'>
-        <div className='w-[400px] h-[600px] flex justify-center items-center mx-2 xs: w-[300px] h-[394px]'>
-          <img src={headerImg} alt="Header Img" />
+              <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+                Full Stack Developer<br className='sm:block hidden' />
+              </p>
+            </div>
+            <div className='self-end mx-auto mt-10 w-10/12 md:w-1/2 md:mx-auto md:mt-5 lg:w-1/3 lg:mx-0 xl:w-1/3'>
+              <a href='#contact'> <div className='floating-img object-fill'>
+                <img src={headerImg} 
+                alt='Header Img'
+                title='Ir a la sección de contacto'
+                />
+              </div>
+              </a>
+            </div>
+          </div>
         </div>
+
+
       </div>
 
       <div className='absolute xs:bottom-12 bottom-12 w-full flex justify-center items-center'>
@@ -43,6 +53,7 @@ const Hero = () => {
                 repeatType: "loop",
               }}
               className='w-3 h-3 rounded-full bg-secondary mb-1'
+              title="Ir a sobre mí"
             />
           </div>
         </a>
