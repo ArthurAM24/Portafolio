@@ -25,7 +25,7 @@ const Hero = () => {
                 Full Stack Developer<br className='sm:block hidden' />
               </p>
             </div>
-            <div className='self-end mx-auto mt-10 w-10/12 md:w-1/2 md:mx-auto md:mt-5 lg:w-1/3 lg:mx-0 xl:w-1/3'>
+            <div className='self-end mx-auto mt-20 w-10/12 xl:w-1/3 lg:w-1/3 lg:mx-0 md:w-1/2 md:mx-auto md:mt-5 sm:mt-10'>
               <a href='#contact'> <div className='floating-img object-fill'>
                 <img src={headerImg} 
                 alt='Header Img'
@@ -40,7 +40,7 @@ const Hero = () => {
 
       </div>
 
-      <div className='absolute xs:bottom-12 bottom-12 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-6 bottom-16 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
