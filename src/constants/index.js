@@ -3,7 +3,7 @@ import {
   backend,
   creator,
   web,
-  
+
   java,
   html,
   css,
@@ -17,7 +17,7 @@ import {
   git,
   figma,
   docker,
-  
+
   essalud,
   company,
   domi,
@@ -73,18 +73,22 @@ const technologies = [
     name: "Java",
     icon: "https://i.postimg.cc/9MtypbLx/java.png",
   },
+
   {
     name: "HTML 5",
     icon: "https://i.postimg.cc/bYgQS6Dr/html.png",
   },
+
   {
     name: "CSS 3",
     icon: "https://i.postimg.cc/W1CmbhD7/css.png",
   },
+
   {
     name: "JavaScript",
     icon: "https://i.postimg.cc/RV0w7cKR/javascript.png",
   },
+
   {
     name: "TypeScript",
     icon: "https://i.postimg.cc/sD1ZQ3CH/typescript.png",
@@ -94,14 +98,17 @@ const technologies = [
     name: "React JS",
     icon: "https://i.postimg.cc/0QfJmQNF/reactjs.png",
   },
+
   {
     name: "Redux Toolkit",
     icon: "https://i.postimg.cc/yx83THgd/redux.png",
   },
+
   {
     name: "Tailwind CSS",
     icon: "https://i.postimg.cc/h42dtf67/tailwind.png",
   },
+
   {
     name: "Node JS",
     icon: "https://i.postimg.cc/TwGDpmTn/nodejs.png",
@@ -113,17 +120,15 @@ const technologies = [
   },
 
   {
-    name: "git",
+    name: "Git",
     icon: "https://i.postimg.cc/8zJW3Nyf/git.png",
   },
+
   {
-    name: "figma",
+    name: "Figma",
     icon: "https://i.postimg.cc/8cZM85QM/figma.png",
   },
-  {
-    name: "docker",
-    icon: "https://i.postimg.cc/zB1nK6Fb/docker.png",
-  },
+
 ];
 
 const experiences = [
@@ -204,7 +209,7 @@ const projects = [
     ],
     image: "https://i.postimg.cc/tJ2fGKH1/Grifosdomi.jpg",
     source_code_link: "https://www.facebook.com/grifosdomi",
-  },{
+  }, {
     name: "Punto Sabroso",
     description:
       "Diseño de página web para restaurante Punto Sabroso.",
@@ -263,7 +268,7 @@ const projects = [
     image: "https://i.postimg.cc/bwqknzz0/Ugelpurus.jpg",
     source_code_link: "https://ugelpurus.net",
   },
-  
+
 ];
 
 export { services, technologies, experiences, projects };
