@@ -55,15 +55,15 @@ const services = [
     icon: web,
   },
   {
-    title: "React.JS",
-    icon: mobile,
-  },
-  {
-    title: "Backend Java",
+    title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Creador de Contenido",
+    title: "Frontend Developer",
+    icon: mobile,
+  },
+  {
+    title: "Microservices & API Development",
     icon: creator,
   },
 ];
@@ -133,29 +133,31 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Practicante Pre Profesional",
-    company_name: "Red de Salud N° 01 Coronel Portillo",
-    icon: essalud,
+    title: "Analista Programador",
+    company_name: "Universidad Nacional Intercultural de la Amazonía",
+    icon: company,
     iconBg: "#383E56",
-    date: " Abril 2019 - Julio 2019",
+    date: " Enero 2025 - Noviembre 2026",
     points: [
-      "Elaboración de Reportes e Informes.",
-      "Manejo de Servidores (SQL Server).",
-      "Soporte Técnico.",
-      "Planificación y seguimiento de Estrategias de Gestión.",
+      "Desarrollo de aplicaciones web con PHP y Laravel, usando Eloquent ORM para el modelado y manipulación de datos.",
+      "Diseño e implementación de microservicios y APIs RESTful para la comunicación entre sistemas.",
+      "Aplicación de patrones de diseño y buenas prácticas de arquitectura de software.",
+      "Integración de bases de datos relacionales y control de versiones con Git.",
     ],
   },
   {
-    title: "Practicante Profesional",
-    company_name: "JSM Multiservicios Generales E.I.R.L.",
+    title: "Analista Programador Junior",
+    company_name: "Codetus",
     icon: company,
     iconBg: "#E6DEDD",
-    date: " Noviembre 2022 - Febrero 2023",
+    date: " Enero 2021 - Enero 2025",
     points: [
-      "Elaboración de informes.",
-      "Brindé asesoramiento técnico a clientes sobre los productos de hardware y software.",
-      "Configuré y personalicé computadoras de acuerdo con las necesidades y requisitos de los clientes.",
-      "Soporte post venta, asistiendo a los clientes con la instalación, configuración y solución de problemas de sus equipos",
+      "Desarrollo y mantenimiento de aplicaciones en C# .NET Core con arquitectura MVC (ASP.NET, CSHTML) y JavaScript.",
+      "Diseño, desarrollo e integración de APIs RESTful y microservicios; consumo de APIs de terceros.",
+      "Consultas y manipulación de datos con Entity Framework, LINQ y Dapper sobre SQL Server.",
+      "Administración de bases de datos en SQL Server y soporte de TI.",
+      "Aplicación de patrones de diseño (Repository, Singleton, Factory) y principios SOLID.",
+      "Desarrollo de servicios y aplicaciones backend con Java, Spring Boot, Spring Data JPA y JDBC para consumo y persistencia de datos.",
     ],
   },
   {
@@ -163,52 +165,54 @@ const experiences = [
     company_name: "Servicentro Minelu E.I.R.L.",
     icon: domi,
     iconBg: "#383E56",
-    date: "Enero 2020 - Febrero 2022",
+    date: "Enero 2018 - Febrero 2020",
     points: [
-      "Elaboración de contenido para blogs.",
-      "Diseño y elaboración de logos atractivos para la Empresa.",
-      "Soporte técnico a usuarios internos y externos",
-      "Resolví problemas de la empresa usando hardware, software y redes.",
+      "Soporte técnico a usuarios internos y externos.",
+      "Resolución de incidencias de hardware, software y redes.",
+      "Diseño y elaboración de logotipos e identidad visual para la empresa.",      
     ],
   },
 
 ];
 
-
 const projects = [
   {
-    name: "AnimeMedia",
+    name: "SARA UNIA",
     description:
-      "Diseño de Página de facebook, para creador de contenido.",
+      "Sistema SIGA para la Universidad UNIA.",
     tags: [
       {
-        name: "Photoshop",
+        name: "PHP",
         color: "blue-text-gradient",
       },
       {
-        name: "Facebook",
+        name: "Laravel",
         color: "green-text-gradient",
       },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
     ],
-    image: "https://i.postimg.cc/mrH01p7q/Animemedia.jpg",
-    source_code_link: "https://www.facebook.com/gaming/AnimemediaxD",
+    image: "https://i.postimg.cc/8z3yqj0K/sara.png",
+    source_code_link: "https://sara.unia.edu.pe",
   },
   {
-    name: "Grifos Domi",
+    name: "Agendaris",
     description:
-      "Diseño de logotipo para el Servicentro Minelu E.I.R.L.",
+      "Sistema de Agendas Online.",
     tags: [
       {
-        name: "Photoshop, Ilustrator",
+        name: "C#",
         color: "blue-text-gradient",
       },
       {
-        name: "Facebook",
+        name: "css",
         color: "green-text-gradient",
       },
     ],
-    image: "https://i.postimg.cc/tJ2fGKH1/Grifosdomi.jpg",
-    source_code_link: "https://www.facebook.com/grifosdomi",
+    image: "https://i.postimg.cc/xdfGCm4H/agendaris.png",
+    source_code_link: "https://app.agendaris.com/",
   }, {
     name: "Punto Sabroso",
     description:
@@ -246,27 +250,6 @@ const projects = [
     ],
     image: "https://i.postimg.cc/Fz9qq9w5/Pidealtoque.jpg",
     source_code_link: "https://github.com/ArthurAM24/ProyectoFinal",
-  },
-  {
-    name: "Ugel Purús",
-    description:
-      "Diseño y Elaboración del portal web de la Institución Ugel Purús.",
-    tags: [
-      {
-        name: "PHP",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Worpress",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "https://i.postimg.cc/bwqknzz0/Ugelpurus.jpg",
-    source_code_link: "https://ugelpurus.net",
   },
 
 ];
