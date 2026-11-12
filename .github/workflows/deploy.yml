@@ -1,79 +1,61 @@
-name: Deploy static content to GitHub Pages and Production
+
+name: Deploy React Portfolio to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches:
       - main
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Set permissions for GitHub Pages deployment
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
-# Allow one concurrent deployment
 concurrency:
-  group: 'pages'
+  group: pages
   cancel-in-progress: true
 
 jobs:
-  # Deploy to GitHub Pages
-  github-pages-deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up Node
-        uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
         with:
-          node-version: 18
-          cache: 'npm'
+          node-version: 22
+          cache: npm
+
       - name: Install dependencies
-        run: npm install
-      - name: Build
+        run: npm ci
+
+      - name: Build React application
         run: npm run build
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v5
         with:
-          path: './dist'
-      - name: Deploy to GitHub Pages
-        id: github-pages-deployment
-        uses: actions/deploy-pages@v1
+          path: ./dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
     environment:
       name: github-pages
-      url: ${{ steps.github-pages-deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
 
-  # Deploy to Production
-  production-deploy:
-    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: 'npm'
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: './dist'
-      - name: Deploy to Production
-        id: production-deployment
-        uses: actions/deploy-pages@v1
-    environment:
-      name: Production
-      # Add the URL for your Production environment here
-
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
